@@ -1,7 +1,4 @@
-# Animais Fantásticos
-
 ![Sem título](https://user-images.githubusercontent.com/96597279/175747229-96984853-7d35-413c-95bc-d3920e25e0d3.png)
-
 
 ### ⚠️ Em Desenvolvimento ⚠️
 > Projeto criado para treinar conceitos de GRID e algumas mágicas que o ES6 trouxe.
