@@ -7,8 +7,8 @@ body{
 }
 
 img{
-    display: inline-block;
     max-width: 100%;
+    height: 100%;
 }
 
 .menu{
@@ -43,7 +43,7 @@ img{
     width: 100%;
     padding: 1rem;  
     display: grid;
-    grid-template-columns: 100px 300px 1fr;
+    grid-template-columns: 100px 400px 1fr;
     grid-gap: 20px;
     margin-bottom: 4rem;
 }
@@ -86,7 +86,7 @@ img{
 }
 
 .animais-lista{
-    height: 370px;
+    height: 600px;
     grid-column: 2;
     overflow-y: scroll;
     background: rgba(34, 34, 34);
@@ -181,4 +181,51 @@ img{
 .copy p{
     padding: 1rem;
     font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  .menu, .grid-section, .copy{
+    grid-column: 1;
+  }
+
+  .grid-section{
+    grid-template-columns: 350px 1fr;
+    grid-gap: 10px;
+  }
+
+  .animais-lista{
+    grid-column: 1;
+  }
+
+  .faq-lista, .dados, .mapa{
+    grid-column: 1 / 3;
+  }
+
+  .menu{
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .copy{
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .titulo{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+    .animais-lista, .animais-descricao{
+        grid-column: 1 / 3;
+      }
+      
+      img{
+        width: 100%;
+      }
 }
